@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width,
+initial-scale=1.0"
+    />
+        <title>IP EXP 4 (2)</title>
+    </head>
+    <body>
+        <h1>IP EXPERIMENT 4</h1>
+        <h2>Question no.2</h2>
+    </body>
+    <script>
+        // Creating a Person Object
+        const S1 = {
+            name: "VITTAL KUMAR",
+            class_name: "D15A",
+            roll_no: 31,
+        };
+        console.log("Person 1: ", S1);
+
+        class Person {
+            constructor(name, class_name, roll_no) {
+                this.name = name;
+                this.class_name = class_name;
+                this.roll_no = roll_no;
+            }
+        }
+
+        const S2 = new Person("VINEET VIJAYAKUMAR", "D15A", 29);
+        console.log("Person 2: ", S2);
+        
+        // We can't use arrow functions to create objects
+        function Student(name, class_name, roll_no) {
+            this.name = name;
+            this.class_name = class_name;
+            this.roll_no = roll_no;
+        }
+
+        const S3 = new Student("ABHISHEK PATIL", "D15A", 49);
+        console.log(S3);
+    </script>
+</html>

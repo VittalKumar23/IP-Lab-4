@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+ 
+ <head>
+    
+<meta charset="UTF-8" />
+
+    
+          <title style="color:yellow;padding:30px;">Customized T-shirt</title>
+<style>
+body {
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(50deg, cyan, grey);
+}
+marquee { 
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    background: lightcoral;
+    color: #333;
+    border: 1px solid #4a4a4a;
+    text-transform: uppercase;
+
+}
+
+marquee header h2 { 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 50;
+    line-height: 50px;
+    text-align: right;
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -moz-animation: scroll-left 2s linear infinite;
+    -webkit-animation: scroll-left 2s linear infinite;
+    animation: scroll-left 15s linear infinite;
+
+}
+@-moz-keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scroll-left {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+img { 
+    float: left;
+  width: 31%;
+  border: thick black solid;
+  margin: 0.5px;
+  padding: 0.5px;
+}
+img.scaled {
+    width: 50%;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+
+  textarea {
+    width: 20%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+
+  select {
+    width: 10%;
+    padding: 6px 2px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+  }
+
+  input[type=text] {
+    background-color: green;
+    color: yellow;
+  }
+</style>
+ 
+ </head>
+ <img src="https://i.pinimg.com/originals/19/36/0c/19360ca2e58109184a64385ee8d1a055.jpg" alt="T-shirt 3" width="250" height="233">
+ <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c41fb841995511.59fcb370e3610.png" alt="T-shirt 4" width="250" height="233">
+ <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bca22953550257.5b4e19225066f.png" alt="T-shirt 6" width="250" height="233">
+ <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f726bb61269657.5fb262922dd22.png" alt="T-shirt 7" width="250" height="233">
+ <img src="https://www.cottonheritage.com/catImg/WAMHIRES/MC1220269_2.jpg" alt="T-shirt 3" width="250" height="233">
+ <img src="https://cdn.shopify.com/s/files/1/1477/6260/products/ser_1024x1024.png?v=1522244954" alt="T-shirt 6" width="250" height="233">
+ <link rel="stylesheet" href="style1.css">
+ <marquee><header><h2><i><mark>Buy 1 get 1 Free!</mark></i></h2></header></marquee>
+
+  
+<body>
+    
+      
+       
+
+    
+        <h1 style="color:Red;padding:30px;"> <u> My Order </u></h1>
+
+   
+ <form
+ name="myForm"
+                id="shirt_cart"
+                onsubmit="return validateForm()"
+                enctype="multipart/form-data"
+                method="put">
+
+      
+<label for="tagline"
+
+ >  
+        <strong style="color:Red;padding:30px;">What tagline do you want on the T-shirt:</strong>
+        </label>
+
+       
+
+<br />
+<br />
+
+      
+<input
+
+        type="text"
+
+        id="tagline"
+
+        name="tagline"
+
+        placeholder="Cricket World"
+
+      />
+<br />
+
+ <p>
+<strong style="color:Red;padding:30px;"><i>T-shirt color:</i></strong>
+</p>
+
+                <div>
+                    <input
+                        checked
+                        type="radio"
+                        name="color"
+                        id="black"
+                        value="Black"
+                    />
+                    <label for="black"> Black </label>
+                </div>
+                <div>
+                    <input type="radio" name="color" id="blue" value="Blue" />
+                    <label for="blue"> Blue </label>
+                </div>
+                <div>
+                    <input type="radio" name="color" id="red" value="Red" />
+                    <label for="red"> Red </label>
+                </div>
+                <div>
+                    <input type="radio" name="color" id="white" value="White" />
+                    <label for="white"> White </label>
+                </div><br /><br />
+
+
+
+     
+ <label for="size"><strong style="color:Red;padding:30px;">T-shirt size:</strong></label
+
+      >
+<br />
+<br />
+
+     
+ <select name="size" id="size">
+
+       
+ <option value="S">S</option>
+
+        
+<option value="M">M</option>
+
+        
+<option value="L">L</option>
+
+       
+ <option value="XL">XL</option></select
+
+      >
+<br /><br />
+
+
+
+      
+<label for="quantity">
+<strong style="color:Red;padding:30px;">Quantity:</strong></label>
+
+     
+ <input type="number" min="0" max="20" name="qty" id="qty"/>
+
+      
+<br />
+<br />
+
+
+
+      
+<label for="order-date">
+<strong style="color:Red;padding:30px;">Deliver By:</strong>
+</label>
+
+      
+<input type="date" id="order-date" name="order-date" />
+<br />
+<br />
+
+
+
+     
+ <label for="name">
+<strong style="color:Red;padding:30px;">Enter your name:</strong>
+</label
+
+      >
+<br />
+<br />
+
+      
+<input type="text" id="name" name="name" />
+<br />
+<br />
+
+
+
+    
+<label for="number">
+<strong style="color:Red;padding:30px;">Enter your mobile number:</strong>
+</label>
+<br />
+<br />
+
+      
+<input type="text" id="number" name="number" />
+<br />
+<br />
+
+
+<label for="email">
+      <strong style="color:Red;padding:30px;">Enter your email address:</strong>
+      </label>
+      <br />
+      <br />
+
+      <input type="text" id="email" name="email" />
+      <br />
+      <br />
+
+
+
+
+
+
+
+
+
+     
+ <label for="address">
+<strong style="color:Red;padding:30px;">Enter your address:</strong></label>
+<br />
+<br />
+
+      
+<textarea id="address" name="address" rows="5" cols="30">
+</textarea>
+
+
+
+      
+            <strong style="color:Red;padding:30px;"><p>Choose Payment Method:</p></strong>
+                    <div>
+                    <input
+                        checked
+                        type="radio"
+                        name="payment"
+                        id="card"
+                        value="Card"
+                    />
+                    <label for="card"> Credit/Debit Card </label>
+                </div>
+                <div>
+                    <input type="radio" name="payment" id="upi" value="UPI" />
+                    <label for="upi"> UPI </label>
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        name="payment"
+                        id="wallet"
+                        value="Wallet"
+                    />
+                    <label for="wallet"> Pay using wallet </label>
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        name="payment"
+                        id="cod"
+                        value="Pay on Delivery"
+                    />
+                    <label for="cod"> Pay on delivery </label>
+                </div>
+            
+      
+</br>
+</br>
+
+      
+<p><strong style="color:Red;padding:30px;">Price:&nbsp;</strong>100 Rs. per T-shirt.</p>
+
+
+
+
+
+
+
+
+
+
+</p>
+
+      
+<input type="submit" value="Confirm" />
+
+      
+<input type="reset" value="Reset" />
+
+    
+</form>
+           
+         <marquee><footer><h3><mark><i>Thank you, Visit again!</i></mark></h3></footer></marquee>
+
+  
+</body>
+ <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+
+
+    <script>
+        function validateForm() {
+            
+            const values = [
+                document.forms["myForm"]["tagline"].value,
+                document.forms["myForm"]["size"].value,
+                document.forms["myForm"]["qty"].value,
+                document.forms["myForm"]["order-date"].value,
+                document.forms["myForm"]["name"].value,
+                document.forms["myForm"]["address"].value,
+                document.forms["myForm"]["number"].value,
+                document.forms["myForm"]["email"].value,
+                document.forms["myForm"]["payment"].value,
+                document.forms["myForm"]["color"].value,
+            ];
+           
+           
+           
+           
+           
+           
+            const hasEmptyFields = Object.values(values).some(
+                (element) => element === ""
+            );
+
+            const receipt_formatted = `Thank you for shopping and visit again!
+ Receipt:
+Date: ${new Date().toLocaleDateString("UK")}
+
+Tagline: ${values[0]}
+
+Size: ${values[1]}
+
+Quantity: ${values[2]}
+
+Date: ${values[3]}
+
+Name: ${values[4]}
+
+Address: ${values[5]}
+
+Phone Number: ${values[6]}
+
+Email ID: ${values[7]}
+
+Payment Method: ${values[8]}
+
+Color of T-shirt: ${values[9]}`;
+            alert(receipt_formatted);
+        }
+        const form = document.getElementById("shirt_cart");
+        form.addEventListener("submit", (event) => {
+            
+            event.preventDefault();
+        });
+    </script>
+</html>
+
